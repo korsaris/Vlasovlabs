@@ -50,4 +50,5 @@ int main(int argc, char *argv[])
 	}
 	
 	closedir(dir);
+	return 0;
 }
