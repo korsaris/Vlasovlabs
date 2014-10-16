@@ -13,7 +13,7 @@ int main()
 	pid_t pid;
 	int n=0,size=pow(2,time->tm_hour%12);
 	pid_t pid_array[size];
-	while(n<size)
+	while(n<size-1)
 	{
 		n++;
 		switch(pid=fork())
