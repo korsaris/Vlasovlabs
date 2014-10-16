@@ -22,19 +22,20 @@ int main()
 				printf("error!!");
 				exit(1);
 			case 0:
-				printf("%lf",sin(time->tm_min));
+				printf("I'm a child №%d sin=%lf\n",n,sin(time->tm_min));
 				exit(0);
 				break;
 			default:
-				printf("gshkjdghskdjg");
+				wait(NULL);
 				pid_array[n]=pid;
 		}
 	}
-	printf("%lf",sin(time->tm_min));
+	printf("Papka process sin=%lf\n",sin(time->tm_min));
 	n=0;
 	while(n<size)
 	{
 		waitpid(pid_array[n],NULL,0);
+		n++;
 	}
 	return 0;
 }
