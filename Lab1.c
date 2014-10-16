@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	{	
 		strcat(fullpath,"/");
 		strcat(fullpath,entry->d_name);
-		stat(fullpath,&buff);
+		stat(fullpath,&buff);//выводы стырены у Андрея
 		printf("filename: %s\n",entry->d_name);
 		printf("filetype: %hhu\n",entry->d_type);
 		printf("I-node number: %llu\n",buff.st_ino);
