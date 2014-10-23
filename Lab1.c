@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	DIR *dir;
 	struct dirent * entry;
 	struct stat buff;
-	char* fullpath[1024], buffer[256];
+	char fullpath[1024], buffer[256];
 
 	if(argv[1]==0) 
 	{
