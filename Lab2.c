@@ -26,13 +26,12 @@ int main()
 				exit(0);
 				break;
 			default:
-				wait(NULL);
 				pid_array[n]=pid;
 		}
 	}
 	printf("Papka process sin=%lf\n",sin(time->tm_min));
 	n=0;
-	while(n<size)
+	while(n<size-1)
 	{
 		waitpid(pid_array[n],NULL,0);
 		n++;
